@@ -373,14 +373,14 @@ $(function () { // Document ready function
     advanceSearchHtml += '<label for = "type-checkbox">Event types:</label><br>';
     advanceSearchHtml += '<div class = "search-checkbox-container">';
     typeSet.forEach(element => {
-      advanceSearchHtml += '<input type="checkbox" class = "type-checkbox" value ="' + element + '"><label for="' + element + '"> ' + element + '</label><br>';
+      advanceSearchHtml += '<label><input type="checkbox" class="type-checkbox" value="' + element + '"> ' + element + '</label><br>';
     });
     advanceSearchHtml += '</div></div>';
     advanceSearchHtml += '<div class = "col-sm-6 search-container">';
     advanceSearchHtml += '<label for = "tag-checkbox">Event tags:&nbsp</label><input id = "tag-search-input" class = "tag-search-input" type="text" placeholder="Search Tags.."></input><br>';
     advanceSearchHtml += '<div class = "search-checkbox-container">';
     tagSet.forEach(element => {
-      advanceSearchHtml += '<div><input type="checkbox" class = "tag-checkbox" value ="' + element + '"><label for="' + element + '" class = "tag-label"> ' + element + '</label></div>';
+      advanceSearchHtml += '<div><label class="tag-label"><input type="checkbox" class="tag-checkbox" value="' + element + '"> ' + element + '</label></div>';
     });
     advanceSearchHtml += '</div></div></div>';
     advanceSearchHtml += '<div class = "advance-search-button-container"><button id = "search-clear" class = "search-clear">Clear Search</button><button id = "advance-search-submit" class = "advance-search-submit">Submit</button></div></div>';
