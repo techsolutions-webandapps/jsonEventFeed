@@ -247,9 +247,9 @@ $(function () { // Document ready function
   // create html for object.
   function buildEvent(obj, count) {
     let html = '<div class="event' + params.wide + '" style="flex:0 0 ' + (100 / state.elementPerRow) + '%">';
-    let image_url = (obj[fields.image_url]) ? obj[fields.image_url] : "https://events.umich.edu/images/default190@2x.png";
-    let image = '<a class = "image-link" href =' + obj[fields.page_link] + '" aria-label="' + obj[fields.event_title] + '">' + '<div class = "event-image' + params.wide + '" style="background-image: url(' + image_url + ')"></div></a>';
     let title = obj[fields.title];
+    let image_url = (obj[fields.image_url]) ? obj[fields.image_url] : "https://events.umich.edu/images/default190@2x.png";
+    let image = '<a class = "image-link" href ="' + obj[fields.page_link] + '" aria-label="View event: ' + title+ '">' + '<div class = "event-image' + params.wide + '" style="background-image: url(' + image_url + ')"></div></a>';
     let date = obj[fields.date];
     let links = obj[fields.links];
     let location_name = obj[fields.location];
